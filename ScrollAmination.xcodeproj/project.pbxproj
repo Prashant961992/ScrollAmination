@@ -16,6 +16,8 @@
 		A865EDF2296DB20800A2891A /* ScrollAminationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865EDF1296DB20800A2891A /* ScrollAminationTests.swift */; };
 		A865EDFC296DB20800A2891A /* ScrollAminationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865EDFB296DB20800A2891A /* ScrollAminationUITests.swift */; };
 		A865EDFE296DB20800A2891A /* ScrollAminationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865EDFD296DB20800A2891A /* ScrollAminationUITestsLaunchTests.swift */; };
+		A865EE0C296DB2C300A2891A /* PageMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865EE0B296DB2C300A2891A /* PageMaster.swift */; };
+		A865EE0E296DB32F00A2891A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865EE0D296DB32F00A2891A /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A865EDF7296DB20800A2891A /* ScrollAminationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollAminationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A865EDFB296DB20800A2891A /* ScrollAminationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAminationUITests.swift; sourceTree = "<group>"; };
 		A865EDFD296DB20800A2891A /* ScrollAminationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAminationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A865EE0B296DB2C300A2891A /* PageMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMaster.swift; sourceTree = "<group>"; };
+		A865EE0D296DB32F00A2891A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				A865EDE3296DB20800A2891A /* Assets.xcassets */,
 				A865EDE5296DB20800A2891A /* LaunchScreen.storyboard */,
 				A865EDE8296DB20800A2891A /* Info.plist */,
+				A865EE0B296DB2C300A2891A /* PageMaster.swift */,
+				A865EE0F296DB33300A2891A /* Extension */,
 			);
 			path = ScrollAmination;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				A865EDFD296DB20800A2891A /* ScrollAminationUITestsLaunchTests.swift */,
 			);
 			path = ScrollAminationUITests;
+			sourceTree = "<group>";
+		};
+		A865EE0F296DB33300A2891A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A865EE0D296DB32F00A2891A /* UIView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A865EE0E296DB32F00A2891A /* UIView.swift in Sources */,
+				A865EE0C296DB2C300A2891A /* PageMaster.swift in Sources */,
 				A865EDDF296DB20400A2891A /* ViewController.swift in Sources */,
 				A865EDDB296DB20400A2891A /* AppDelegate.swift in Sources */,
 				A865EDDD296DB20400A2891A /* SceneDelegate.swift in Sources */,
@@ -439,6 +455,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScrollAmination/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scroll;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -466,6 +483,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScrollAmination/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scroll;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

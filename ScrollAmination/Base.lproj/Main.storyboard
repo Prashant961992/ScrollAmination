@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tqk-be-T6n">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="bCc-PQ-XcQ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Tqk-be-T6n" customClass="ViewController" customModule="ScrollAmination" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S1o-Q9-yvy"/>
+                        <viewControllerLayoutGuide type="bottom" id="OM2-Be-xHg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jK8-07-esr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daN-i9-Yg1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-fn-NgD">
+                                <rect key="frame" x="149.5" y="816" width="115.5" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BeK-Pj-YRv"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="daN-i9-Yg1" secondAttribute="trailing" id="30n-N8-3pa"/>
+                            <constraint firstItem="daN-i9-Yg1" firstAttribute="top" secondItem="jK8-07-esr" secondAttribute="top" id="NYc-5G-dbh"/>
+                            <constraint firstItem="OM2-Be-xHg" firstAttribute="top" secondItem="pmI-fn-NgD" secondAttribute="bottom" constant="20" id="Oio-nG-raj"/>
+                            <constraint firstAttribute="bottom" secondItem="daN-i9-Yg1" secondAttribute="bottom" id="aVb-l5-45e"/>
+                            <constraint firstItem="daN-i9-Yg1" firstAttribute="leading" secondItem="jK8-07-esr" secondAttribute="leading" id="kGA-GD-tPz"/>
+                            <constraint firstItem="pmI-fn-NgD" firstAttribute="centerX" secondItem="jK8-07-esr" secondAttribute="centerX" id="pRw-eS-fhR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="pmI-fn-NgD" id="mL6-v9-xwy"/>
+                        <outlet property="pageFrameView" destination="daN-i9-Yg1" id="YOq-zy-Rmb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lms-fy-dF1" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="26.116071428571427"/>
         </scene>
     </scenes>
 </document>
